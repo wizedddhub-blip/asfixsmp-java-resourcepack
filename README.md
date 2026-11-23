@@ -1,28 +1,33 @@
-# ASFIX SMP — pack Java 26.2
+# ASFIX SMP — Resource pack Java 26.2
 
-Pack ItemsAdder et BetterHud pour Minecraft Java 26.2. La direction visuelle ASFIX utilise des matériaux naturels — acier, fer sombre, bois, cuir et bronze — avec des pierres colorées comme accents.
+Pack ItemsAdder et BetterHud pour Minecraft Java 26.2. La direction visuelle ASFIX garde des matériaux naturels — acier, fer sombre, bois, cuir, bronze et jade — avec des accents colorés propres à chaque série.
 
-## Publication v106.30
+## Publication v106.31
 
-- Pack ItemsAdder avec 13 outils et armes en modèles cuboïdes 3D (3 pioches, 4 outils de métier, 3 épées et 3 haches) et 9 caisses détaillées (5 Cosmic et 4 collections).
-- 22 modèles vedettes à géométries distinctes, pour 873 cuboïdes volumétriques; la galerie interactive est disponible dans la documentation centrale.
-- Cadres BetterHud raffinés, palette bois sombre / acier / bronze / jade, icônes et police Oxanium.
-- Minecraft Java 26.2, format 88.0, overlay BetterHud 26.2.
+- 13 modèles d'équipement retravaillés en géométrie volumétrique : 3 pioches, 4 outils de métier, 3 épées et 3 haches.
+- 9 caisses 3D thématiques conservées : 5 Cosmic et 4 collections.
+- Les 22 modèles vedettes totalisent 1 680 cuboïdes 3D, avec géométries et textures distinctes. Les pioches et lames utilisent des arêtes biseautées, des formes effilées et des détails séparés en relief.
+- HUD BetterHud ASFIX avec cadre bois sombre, ferrures acier et bronze, touches jade, police Oxanium et informations de profil, métier, coordonnées, statistiques et progression.
+- Minecraft Java 26.2 : resource format 88.0 et overlay BetterHud 26.2.
 
 ### Aperçus
 
-![HUD ASFIX v106.30](preview/asfix-v106.30-hud-preview.png)
+![HUD ASFIX v106.31](preview/asfix-v106.31-hud-preview.png)
 
-![Outils et armes 3D](preview/asfix-v106.29-weapons-gui.png)
+![Pioches, outils et armes 3D](preview/asfix-v106.31-weapons-gui.png)
 
-![Caisses 3D](preview/asfix-v106.29-crates-gui.png)
+![Caisses ASFIX 3D](preview/asfix-v106.31-crates-gui.png)
 
-Les maquettes et planches sont des projections hors moteur Minecraft. Les objets utilisent une géométrie voxel cuboïde 3D, pas des maillages libres PBR; le rendu final dépend du client, d’ItemsAdder et du pack distribué.
+Les images sont des maquettes et projections calculées hors moteur Minecraft. Les modèles sont des volumes cuboïdes texturés conformes aux modèles d'objets Minecraft, pas des maillages PBR libres. Le rendu final dépend du client, d'ItemsAdder et de la fusion BetterHud sur le serveur.
 
 ## Archive
 
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.30.zip`
-- Taille : 14 415 645 octets
-- SHA-1 : `B5E170AC7457242CD0E64909D4B7933218F04BF3`
-- SHA-256 : `49E8085063F2C1364D3AFB6F30F4F331A702FFE5D4CD5A12D2B3BA08A284BE29`
-- [Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.30.zip)
+- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.31.zip`
+- Taille : 14 418 684 octets
+- SHA-1 : `A574F60C6386466FA795D890E703DFD11A3DA014`
+- SHA-256 : `837AA4058B643BE5328661670EBC4E06FC2BEF7D2B043D295830357D867E0751`
+- [Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.31.zip)
+
+## Installation ItemsAdder et BetterHud
+
+Le pack et les contenus ItemsAdder sont préparés localement. Sur le serveur, BetterHud doit générer ses ressources avec `/betterhud reload`, puis ItemsAdder reconstruire le resource pack avec `/iazip`. Cette reconstruction en direct et l'apparence finale dans un client Minecraft 26.2 n'ont pas encore été vérifiées.
