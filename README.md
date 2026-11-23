@@ -1,47 +1,52 @@
-# ASFIX SMP — Resource pack Java 26.2
+# ASFIX SMP — Resource pack Java 26.2, v106.35
 
-Pack ItemsAdder et BetterHud pour Minecraft Java 26.2. La direction visuelle ASFIX utilise des matériaux naturels — acier, fer sombre, bois, cuir, bronze et jade — avec des accents propres à chaque série.
+Cette version conserve le thème ASFIX en acier, fer sombre, bois, cuir, bronze et jade. Elle ajoute un reflet animé aux neuf gemmes d’icônes de caisses.
 
-## Publication v106.35
+## Changements
 
-- 31 modèles de gameplay reliés aux contenus actifs : armes, outils, caisses et clés.
-- 128 géométries de modèles volumétriques dans l’archive; 9 caisses de monde avec silhouettes et ornements distincts.
-- HUD BetterHud ASFIX : cadre bois sombre, ferrures acier et bronze, touches jade, police Oxanium, profil, métier, coordonnées, statistiques, progression et barre personnalisée.
-- Icônes de grades uniques et éléments d’interface assortis au thème ASFIX.
-- Ressource préparée pour Minecraft Java 26.2, ItemsAdder et BetterHud.
+- Neuf icônes de gemme animées avec quatre images chacune. Le reflet se déplace sur la gemme et sa silhouette reste stable.
+- Les caisses en monde restent des modèles fixes dans cette version; seule l’icône de gemme scintille.
+- Les modèles ItemsAdder v106.34, les 20 glyphes de grade et le HUD BetterHud v106.34 sont conservés.
+- Le HUD comprend un cadre illustré bois et bronze, des touches jade, la police Oxanium, un portrait joueur, le profil, le métier, les coordonnées, les statistiques, le solde et la progression.
+- Le pack cible Minecraft Java 26.2, avec les définitions de modèles au format 88.0.
 
-### Aperçus
+## Aperçus
 
-Les images ci-dessous sont des aperçus générés hors moteur Minecraft. Elles servent à examiner les modèles et la composition visuelle; elles ne prouvent pas le rendu dans un client connecté au serveur.
+- [Galerie des armes, outils, caisses, clés, badges et HUD](apercu-v106.35.html)
+- [Galerie des 128 modèles](../apercu-tous-modeles-asfix-v106.35.html)
+- [Aperçu des quatre images par gemme](previews/crate-gem-animation-preview-v10635.png)
+- [HUD BetterHud](previews/asfix-v106.35-hud-preview.png)
+- [Pioches, outils et armes 3D](previews/asfix-v106.35-weapons-gui.png)
+- [Neuf caisses 3D, vue GUI](previews/asfix-v106.35-crates-gui.png)
+- [Neuf caisses, transformation monde FIXED](previews/asfix-v106.35-crates-world-fixed.png)
+- [Neuf clés 3D](previews/asfix-v106.35-keys-gui.png)
 
-![HUD ASFIX v106.35](preview/asfix-v106.34-hud-preview.png)
+Ces vues de modèles sont des projections hors du moteur Minecraft; elles ne remplacent pas le rendu client. Le HUD correspond aux fichiers et textures BetterHud inclus, mais son affichage en jeu dépend du chargement du pack et du plugin.
 
-![Pioches, outils et armes 3D](preview/asfix-v106.34-weapons-gui.png)
+## Validation locale
 
-![Caisses ASFIX 3D](preview/asfix-v106.34-crates-gui.png)
+- 2 639 entrées ZIP uniques.
+- 132 fichiers JSON de modèle, dont 128 modèles avec volumes.
+- 31 modèles de gameplay vérifiés : armes, outils, caisses et clés.
+- Les neuf caisses monde sont associées à ItemsAdder et à la transformation FIXED.
+- 20 glyphes de grade uniques; 349 références de textures présentes.
+- 18 atlas et métadonnées d’animation contrôlés (neuf variantes pour les chemins item et block).
+- HUD BetterHud vérifié dans le pack : cadres naturels, police Oxanium, portrait fancy.
+- Les JAR NetherRanks 1.0.15 et NetherCrates 1.0.8 restent uniques dans le dossier plugins.
 
-![Caisses dans le monde — aperçu](preview/asfix-v106.34-crates-world-fixed.png)
-
-![Clés ASFIX](preview/asfix-v106.34-keys-gui.png)
-
-### Gemmes animees
-
-Neuf icones de gemme de caisse ont quatre images avec un reflet mobile et une silhouette stable. Cette animation concerne les icones; les caisses en monde restent des modeles fixes.
-
-![Apercu des gemmes de caisses animees](preview/crate-gem-animation-v10635.png)
-
-## Limites de rendu
-
-Les modèles d’objets Minecraft sont construits avec des cuboïdes texturés et des faces orientées; ils ne sont pas des maillages PBR libres. Les modèles d’armes et de caisses ont du volume réel dans leurs définitions JSON, plutôt qu’une simple image plane ou un sprite épaissi. Les armures portées utilisent les couches de texture du joueur. Le rendu final dépend des versions installées d’ItemsAdder et BetterHud et doit encore être confirmé dans le client Minecraft du serveur.
+Scripts de vérification : [validate-v10635.ps1](validate-v10635.ps1) et [verify-v10635-archive.ps1](verify-v10635-archive.ps1). La génération et la stabilisation des reflets sont documentées dans [build-crate-gem-animations.ps1](../asfix-resourcepack-v106.34/build-crate-gem-animations.ps1) et [stabilize-crate-gem-animations.ps1](../asfix-resourcepack-v106.34/stabilize-crate-gem-animations.ps1).
 
 ## Archive
 
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.35.zip`
+- Fichier : AsfixSMP-Java-ResourcePack-26.2-v106.35.zip
 - Taille : 14 922 741 octets
-- SHA-1 : `78B53AB7285BBD504BF81A2E69B4B21433BC1CFD`
-- SHA-256 : `85EF97B9D10E8829C1BFD4429F706B08C73FFEC63422B1B00EFE70D820AB5B3F`
-- [Télécharger le pack v106.35](AsfixSMP-Java-ResourcePack-26.2-v106.35.zip)
+- SHA-1 : 78B53AB7285BBD504BF81A2E69B4B21433BC1CFD
+- SHA-256 : 85EF97B9D10E8829C1BFD4429F706B08C73FFEC63422B1B00EFE70D820AB5B3F
+- [Télécharger v106.35](AsfixSMP-Java-ResourcePack-26.2-v106.35.zip)
+- Dépôt public : [wizedddhub-blip/asfixsmp-java-resourcepack](https://github.com/wizedddhub-blip/asfixsmp-java-resourcepack)
 
-## Installation ItemsAdder et BetterHud
+Le server.properties du dossier central pointe vers cette archive. Le serveur WinHeberg n’a pas été redémarré ni vérifié avec ce nouveau pack.
 
-Sur le serveur, BetterHud doit générer ses ressources avec `/betterhud reload`, puis ItemsAdder reconstruire le resource pack avec `/iazip`. Cette reconstruction en direct et l’apparence finale dans Minecraft Java 26.2 ne sont pas revendiquées comme vérifiées par cette publication.
+## Limites du format
+
+Les modèles d’objets Minecraft utilisent des cuboïdes texturés et des faces orientées. Ils ont une géométrie 3D réelle et ne sont pas des sprites épaissis, mais ce ne sont pas des meshes lissés avec matériaux PBR. Le rendu dans un client Minecraft après chargement du pack reste à confirmer.
