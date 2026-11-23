@@ -1,37 +1,33 @@
-# ASFIX SMP — pack de ressources Java
+# ASFIX SMP — pack Java
 
-## Version 106.26 · Minecraft Java 26.2
+Pack ItemsAdder et BetterHud pour Minecraft Java 26.2. La palette garde les matériaux naturels — acier, bois, cuir, bronze, pierre et jade — et réserve les couleurs vives aux gemmes et aux effets.
 
-Pack ItemsAdder et BetterHud d’ASFIX SMP. La direction artistique garde des matériaux naturels — acier, bois, cuir, bronze, pierre et jade — et réserve les couleurs cosmiques aux gemmes et aux effets.
+## Publication v106.27
 
-### Changements v106.26
+- Les trois pioches, trois épées et trois haches évolutives ont une géométrie 3D faite de volumes texturés, avec têtes segmentées, arêtes, biseaux, renforts, gemmes et poignées travaillées.
+- Les cinq caisses ItemsAdder restent des modèles 3D volumétriques détaillés et conservent leurs identifiants.
+- Le pack contient 119 fichiers de modèle JSON, dont 115 modèles géométriques, 2 768 cuboïdes, 702 cuboïdes orientés et 16 608 références de faces texturées. Les 110 références de modèles d’objets ont été résolues.
+- Le HUD BetterHud ASFIX conserve son thème bois, bronze et jade, sa police Oxanium, le portrait, le grade, le métier, les coordonnées, les jauges et le solde. Cette version améliore les modèles, pas la composition du HUD.
+- Ciblage Minecraft Java 26.2, format 88.0. Les références ItemAdder et l’overlay BetterHud 26.2 sont inclus.
 
-- Reprise des neuf outils évolutifs : trois pioches, trois épées et trois haches. Les têtes utilisent des volumes segmentés, des tranchants et biseaux en relief, des nervures, des gemmes serties et des manches texturés.
-- Le pack contient 119 fichiers de modèle JSON, dont 115 modèles avec éléments géométriques : 2 171 cuboïdes texturés et 321 volumes orientés. Les 13 026 références de faces texturées et les 110 références personnalisées d’objets ont été vérifiées.
-- Les cinq caisses ItemsAdder gardent leurs modèles volumétriques détaillés : 98 à 114 volumes chacune.
-- La galerie complète de 115 modèles a été actualisée; la planche d’aperçu affiche les neuf outils et les cinq caisses.
-- HUD BetterHud ASFIX : portrait du joueur, grade, métier, coordonnées, niveau et progression, santé, armure, faim et solde. Thème bois, bronze et jade avec police Oxanium.
-- Format ciblé Minecraft Java 26.2 (88.0). Le contrôle du ZIP n’a trouvé aucune entrée dupliquée, erreur JSON, référence de modèle ou texture personnalisée manquante.
+### Aperçu des modèles
 
-### Géométrie et limites du format
+![Planche 3D texturée des outils et caisses](preview/apercu-modeles-volumetriques-v10627.png)
 
-Les outils et les caisses utilisent de vrais volumes 3D ItemsAdder/Minecraft; ils ne sont pas des sprites 2D épaissis. Le format d’éléments vanilla décrit des cuboïdes texturés. Il ne fournit pas un maillage libre avec matériaux PBR dans le client vanilla, donc l’aperçu montre une géométrie volumétrique Minecraft et non un rendu photoréaliste AAA.
+La planche est un rendu logiciel local des éléments et textures JSON, hors moteur Minecraft. La galerie interactive complète des 115 modèles se trouve dans le dossier central ASFIX.
 
-Les aperçus ont été générés depuis les modèles et textures du pack, hors moteur Minecraft. Ils ne remplacent pas une capture du client avec ItemsAdder actif.
+### Limites du rendu Minecraft
+
+Les objets sont réellement volumétriques : leurs fichiers définissent de nombreux cuboïdes avec épaisseur et géométrie sur plusieurs axes. Le format d’objets vanilla ne permet pas un maillage libre avec matériaux PBR. Le style reste donc celui d’un modèle Minecraft texturé; l’aperçu hors jeu ne remplace pas une capture du client avec ItemsAdder activé.
 
 ### HUD
 
-La composition s’inspire de Tavern HUD, de ses informations de joueur et de progression, et des références visuelles d’interfaces envoyées. Les cadres et icônes ont une direction ASFIX propre; les visuels commerciaux ne sont pas copiés.
+La composition reprend des repères de HUD d’aventure — informations joueur, position, niveau et jauges — dans une direction ASFIX originale. Les interfaces commerciales citées servent d’inspiration; leurs images et éléments propriétaires ne sont pas copiés.
 
-### Aperçus
+## Archive
 
-- [Planche 3D texturée des outils et caisses v106.26](preview/apercu-modeles-volumetriques-v10626.png) — aperçu logiciel hors jeu.
-- [Maquette HUD naturel ASFIX](preview/apercu-hud-naturel-asfix-v10625.png) — le HUD n’a pas changé visuellement dans cette révision.
-
-### Archive
-
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.26.zip`
-- Taille : 17 606 011 octets.
-- SHA-1 : `8F361E4CB919372839B78B3A31AC95700933DEAC`
-- SHA-256 : `BFBD845C08FE17FD6FE60251C10E0EBB98076DF70D1511FB2E354A534359476D`
-- [Télécharger l’archive](https://raw.githubusercontent.com/wizedddhub-blip/asfixsmp-java-resourcepack/main/AsfixSMP-Java-ResourcePack-26.2-v106.26.zip)
+- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.27.zip`
+- Taille : 17 626 275 octets
+- SHA-1 : `4114087D409D02766507E390558761B2C6DDA646`
+- SHA-256 : `DE63A560C3CE3DC97F7A77355F80FA61B65B849867E96FAC83FECA15E63DCE98`
+- [Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.27.zip)
