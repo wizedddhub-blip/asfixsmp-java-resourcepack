@@ -1,34 +1,33 @@
-# ASFIX SMP — Resource pack Java 26.2, v106.37
+# ASFIX SMP — pack Java 26.2, v106.40
 
-## Version courante
+[Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.40.zip)
 
-Le pack v106.37 reprend la base locale v106.36 et ajoute les outils/armes voxel style vanilla ainsi que les ressources BetterHud générées pour Minecraft 26.2.
+## Outils
 
-- 3 pioches évolutives, 4 outils de métier, 3 épées et 3 haches en modèles 3D faits de petits cuboïdes.
-- Textures d’outil 16×16 avec bois, acier, jade, cyan et ambre.
-- HUD BetterHud ASFIX : cadre naturel bois/bronze/jade, icônes distinctes, Silkscreen pour le titre et Oxanium pour les valeurs.
-- Modèles précédents conservés, dont les modèles d’armure volumétriques et les assets de caisses/GUI présents dans la base.
-- Format pack Minecraft 26.2 : `88.0`.
+Le pack contient 13 modèles ItemsAdder : trois pioches évolutives, quatre outils de métier, trois épées et trois haches. Ils totalisent 1 309 volumes cubiques avec profondeur non nulle. Les textures gardent des matériaux naturels (bois, métal forgé, cuir) et des accents de gemmes adaptés à chaque set.
 
-## Contrôles effectués
+Chaque outil hérite des transformations `minecraft:item/handheld` de Minecraft. Les rotations et échelles personnalisées ont été retirées pour retrouver la pose des outils vanilla en main. Les 13 définitions d’objets pointent vers leurs modèles, et les textures référencées sont présentes dans le pack.
 
-- 2 716 chemins ZIP, aucun doublon.
-- 132 modèles JSON, 2 085 cuboïdes, aucune profondeur nulle, aucune coordonnée hors plage 0–16.
-- 332 références de textures résolues, aucune manquante.
-- 65 textures de face des outils, toutes en 16×16.
-- Chargement isolé Paper 26.2 / Java 25 avec BetterHud, PlaceholderAPI et AsfixHudBridge : 11 variables ASFIX enregistrées et aucune erreur de layout/image.
+## HUD
 
-Le test serveur vérifie le chargement BetterHud et la construction du pack. Il n’a pas été rejoint par un client Minecraft ; le rendu exact dans le client reste à confirmer. Le pack cible Java 26.2. Le HUD Bedrock est désactivé dans la configuration BetterHud actuelle.
+L’archive contient les ressources BetterHud ASFIX compilées pour Minecraft 26.2 : 48 tuiles d’image pour le HUD et la hotbar, ainsi que l’overlay shader texte de la version 26.2. Aucun JAR de plugin n’est inclus dans le resource pack.
 
-## Aperçus
+## Vérification
 
-- Galerie des modèles : [aperçu 3D des outils](preview/v106.37-all-tools-voxel.png)
-- Aperçu HUD : [HUD ASFIX](preview/v106.37-hud.png)
+- Format Minecraft : `88.0` (26.2).
+- 2 645 entrées ZIP, sans chemin en double.
+- 273 fichiers JSON analysés sans erreur.
+- 13 modèles et 1 309 volumes 3D, aucun élément à profondeur nulle.
+- Aucune texture manquante parmi les modèles d’outils et aucune liaison ItemsAdder manquante.
+- 48 tuiles BetterHud compilées et shader 26.2 présents.
+- Taille : 15 462 566 octets.
+- SHA-1 : `6AE2A5CBFEDC888CFB7C80479E4BE4BD233FEC26`.
+- SHA-256 : `4B6268866065E5468F13C2059D386955027355418CF0CFCAEAA505040F878EDF`.
 
-## Archive v106.37
+La galerie ci-dessous est une projection hors moteur Minecraft des cuboïdes du pack. La structure a été vérifiée, mais cette archive v106.40 n’a pas encore été affichée dans un client Minecraft ; son apparence exacte en jeu reste donc à confirmer.
 
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.37.zip`
-- Taille : 15 905 670 octets
-- SHA-1 : `7EDD583595BD3956E5B33008B7741B329609DF14`
-- SHA-256 : `4E1C6D2E1435566A740B35AA019B51E0E2DAE515648765AE00DE41D6AB1EF885`
-- Construction : générée localement à partir des contenus ItemsAdder et de BetterHud pour 26.2.
+[Ouvrir l’aperçu hors jeu des 13 outils](preview/v106.40-tools-offline-projection.png)
+
+## Reconstruction
+
+Lancer `build-release-v106.40.ps1` dans PowerShell. Le script part du ZIP v106.39, remplace les 13 modèles d’outils, intègre les ressources BetterHud compilées pour 26.2, puis vérifie l’archive et écrit `release-v106.40-manifest.txt`.
