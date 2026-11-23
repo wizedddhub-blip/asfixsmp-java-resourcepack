@@ -1,33 +1,33 @@
 # ASFIX SMP — pack Java
 
-Pack ItemsAdder et BetterHud pour Minecraft Java 26.2. La palette garde les matériaux naturels — acier, bois, cuir, bronze, pierre et jade — et réserve les couleurs vives aux gemmes et aux effets.
+Pack ItemsAdder et BetterHUD pour Minecraft Java 26.2. La direction visuelle ASFIX garde des matériaux naturels — acier, fer sombre, bois, cuir et bronze — avec des gemmes colorées réservées aux accents.
 
-## Publication v106.27
+## Publication v106.28
 
-- Les trois pioches, trois épées et trois haches évolutives ont une géométrie 3D faite de volumes texturés, avec têtes segmentées, arêtes, biseaux, renforts, gemmes et poignées travaillées.
-- Les cinq caisses ItemsAdder restent des modèles 3D volumétriques détaillés et conservent leurs identifiants.
-- Le pack contient 119 fichiers de modèle JSON, dont 115 modèles géométriques, 2 768 cuboïdes, 702 cuboïdes orientés et 16 608 références de faces texturées. Les 110 références de modèles d’objets ont été résolues.
-- Le HUD BetterHud ASFIX conserve son thème bois, bronze et jade, sa police Oxanium, le portrait, le grade, le métier, les coordonnées, les jauges et le solde. Cette version améliore les modèles, pas la composition du HUD.
-- Ciblage Minecraft Java 26.2, format 88.0. Les références ItemAdder et l’overlay BetterHud 26.2 sont inclus.
+- Reprise de 13 outils et armes en vraie géométrie de cuboïdes 3D : trois pioches, quatre outils de métier, trois épées et trois haches. Chaque modèle a une silhouette en plusieurs volumes, du relief sur le manche et les arêtes, et des textures dédiées.
+- Les neuf caisses — cinq Cosmic et quatre caisses associées aux sets Astral Royal, Grim Reaper, Nightshade et Christmas Dreams — restent des modèles 3D distincts.
+- 94 fichiers de textures et 22 modèles d’objets sont nouveaux ou actualisés dans la source ItemsAdder v106.28. La galerie interactive locale présente 119 cartes; l’ensemble du pack contient 123 JSON de modèles.
+- Le HUD ASFIX reste une interface BetterHUD personnalisée en bois, bronze et jade : tête réelle du joueur en jeu, grade, métier, coordonnées, santé, armure, faim, solde et progression XP. La police Oxanium et les icônes propres au serveur sont conservées.
+- Ciblage Minecraft Java 26.2, format 88.0, avec l’overlay BetterHUD 26.2 inclus.
 
-### Aperçu des modèles
+### Aperçus
 
-![Planche 3D texturée des outils et caisses](preview/apercu-modeles-volumetriques-v10627.png)
+![Aperçu GUI des 13 outils et armes 3D](preview/asfix-v106.28-weapons-gui.png)
 
-La planche est un rendu logiciel local des éléments et textures JSON, hors moteur Minecraft. La galerie interactive complète des 115 modèles se trouve dans le dossier central ASFIX.
+![Maquette du HUD ASFIX](preview/asfix-v106.28-hud-preview.png)
 
-### Limites du rendu Minecraft
+La galerie interactive de tous les objets se trouve localement dans `docs/apercu-tous-modeles-asfix-v106.28.html`. Les planches sont des projections locales des JSON et textures, pas des captures d’un client Minecraft.
 
-Les objets sont réellement volumétriques : leurs fichiers définissent de nombreux cuboïdes avec épaisseur et géométrie sur plusieurs axes. Le format d’objets vanilla ne permet pas un maillage libre avec matériaux PBR. Le style reste donc celui d’un modèle Minecraft texturé; l’aperçu hors jeu ne remplace pas une capture du client avec ItemsAdder activé.
+### Limites du rendu
 
-### HUD
+Les armes, outils et caisses utilisent des volumes 3D avec épaisseur sur plusieurs axes. Le format de modèles d’objets vanilla ne fournit pas de maillage libre ni de matériaux PBR; le résultat reste un modèle voxel Minecraft avec des surfaces détaillées, pas un rendu photoréaliste. L’apparence exacte en jeu dépend du client, d’ItemsAdder et du pack chargé.
 
-La composition reprend des repères de HUD d’aventure — informations joueur, position, niveau et jauges — dans une direction ASFIX originale. Les interfaces commerciales citées servent d’inspiration; leurs images et éléments propriétaires ne sont pas copiés.
+La maquette HUD reprend une disposition d’aventure avec portrait et barres dédiées, dans le style bois, bronze et jade propre à ASFIX. Elle ne remplace pas une capture client après reconnexion au serveur.
 
 ## Archive
 
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.27.zip`
-- Taille : 17 626 275 octets
-- SHA-1 : `4114087D409D02766507E390558761B2C6DDA646`
-- SHA-256 : `DE63A560C3CE3DC97F7A77355F80FA61B65B849867E96FAC83FECA15E63DCE98`
-- [Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.27.zip)
+- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.28.zip`
+- Taille : 14 789 004 octets
+- SHA-1 : `D0DFCCC3110643C3DE2C80B97DC8B8527D7A20ED`
+- SHA-256 : `D7380C00F95941BCCCC7E84B6D80D1E56D12584BC07982E8B8E6618EE1AA1458`
+- [Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.28.zip)
