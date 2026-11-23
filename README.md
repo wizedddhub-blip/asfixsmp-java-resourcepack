@@ -26,7 +26,7 @@ Le HUD s’inspire des panneaux lisibles et des informations de progression mont
 
 - [Planche des 35 géométries principales v106.25](preview/asfix-v106.25-geometry-preview.png)
 - [Projection vectorielle v106.25](preview/asfix-v106.25-geometry-preview.svg)
-- [Ancienne maquette du HUD naturel ASFIX](preview/apercu-hud-naturel-asfix-v10621.png) — maquette illustrative, pas une capture de jeu.
+- [Maquette du HUD naturel ASFIX v106.25](preview/apercu-hud-naturel-asfix-v10625.png) — maquette illustrative, pas une capture de jeu.
 
 ### Archive
 
