@@ -1,44 +1,37 @@
 # ASFIX SMP — pack de ressources Java
 
-## Version 106.23 · Minecraft Java 26.2
+## Version 106.24 · Minecraft Java 26.2
 
-Pack ASFIX pour ItemsAdder et BetterHud. La direction des blocs personnalisés reste naturelle : pierre sombre, cuivre, or, azur, glace et jade. Les tons violets restent réservés aux noms ou objets cosmiques hors blocs.
+Pack ASFIX pour ItemsAdder et BetterHud. La direction artistique garde des matériaux naturels — bois, bronze, acier, pierre et jade — avec les couleurs cosmiques réservées aux objets qui les utilisent.
 
-### Modifications v106.23
+### Modifications v106.24
 
-- Reprise volumétrique des six armes (trois épées, trois haches), des trois pioches évolutives et de la clé de galaxie, avec matériaux texturés et pièces sculptées.
-- Ajout de quatre textures de matériaux à la clé de galaxie; corrections des rotations hors limites sur les pioches et deux crates.
-- Le pack conserve les 603 ressources BetterHud 26.2 vérifiées dans l’archive : cadre bois et bronze, accents jade, icônes, barres et police Oxanium.
-- L’audit v106.23 trouve 55 modèles, 1 666 volumes, 235 pièces orientées, 9 996 faces mappées et zéro référence de texture manquante.
+- Textures de matériaux détaillées en 128×128 pour les six armes et les trois pioches évolutives : acier forgé, tranchants, cuir, bois, gemmes et accents gravés.
+- Synchronisation de 110 définitions ItemsAdder, de 55 modèles 3D et de leurs références. Toutes les définitions d’objets personnalisés du pack pointent vers un modèle présent.
+- HUD BetterHud ASFIX au thème bois, bronze et jade : tête, grade, nom, métier, coordonnées, niveau, barre d’expérience du métier, santé, armure, faim et solde. Police Oxanium et 603 ressources BetterHud vérifiées.
+- Format Minecraft Java 26.2 (88.0). Aucun doublon de chemin dans l’archive.
 
-### Base naturelle v106.20
+### Modèles et rendu
 
-- Neuf textures de minerais retravaillées en 64×64 : pierre texturée et veines minérales irrégulières, avec des teintes naturelles.
-- Les 34 textures de blocs personnalisés ont été contrôlées : aucun pixel violet détecté.
-- Correction de 12 fichiers .mcmeta qui demandaient des images inexistantes. Les textures concernées n’avaient qu’une seule image; elles chargent maintenant une frame valide sans animations fantômes.
-- Les mêmes textures et métadonnées corrigées sont synchronisées dans la source ItemsAdder 4.0.16 du dossier central.
-- Les cadres des menus NetherCore, NetherJobs, NetherRanks, AsfixModeration et AsfixCharacter suivent une palette bois, cuivre et vert.
+- L’audit trouve 55 modèles cuboïdes, 1 666 volumes, 235 éléments orientés et 9 996 faces texturées. Aucune face aplatie, texture manquante ou référence d’item sans modèle n’a été détectée.
+- Les objets sont réellement en volume dans le format modèle Java. La géométrie reste composée de cuboïdes Minecraft; les détails supplémentaires viennent des volumes, des textures haute résolution, des arêtes et des matériaux. Cela ne produit pas un maillage polygonal PBR.
+- Les pioches et armes utilisent des textures dédiées, pas une épaisseur appliquée à un sprite 2D.
+- Les aperçus sont des projections des JSON et textures sources, pas des captures de rendu en jeu. Le rendu final doit encore être observé avec le client Minecraft et ItemsAdder actifs.
 
-### Modèles et HUD
+### Direction du HUD
 
-- 55 modèles Minecraft à volumes : les 35 modèles détaillés de caisses, clé, armes, outils et pièces d’armure d’inventaire, plus les modèles de grades.
-- Les éléments 3D restent soumis à la géométrie cuboïde du format Minecraft; les interfaces utilisent des icônes 2D. Les pièces d’armure sont des modèles d’objet d’inventaire, pas un maillage porté sur le personnage.
-- HUD BetterHud ASFIX : tête du joueur, grade, nom, métier, coordonnées, niveau, expérience métier, santé, armure, faim et solde. Cadres en bois et bronze, accents jade, icônes dédiées et police Oxanium.
-- Les aperçus sont des projections des JSON source, pas des captures du moteur Minecraft. Le rendu final des objets avec les transforms ItemsAdder reste à confirmer côté client.
+Le HUD reprend les panneaux lisibles et les informations de progression mis en avant par les références Tavern HUD, avec des cadres texturés naturels, une tête de joueur, une typographie dédiée, des icônes ASFIX cohérentes et des couleurs de grade distinctes. Les icônes et préfixes sont recréés pour ASFIX plutôt que copiés d’assets commerciaux.
 
 ### Aperçus
 
-- [Nouvelles textures de minerais naturels](preview/asfix-natural-ore-blocks-v106.20.png)
-- [Planche des 35 géométries principales](preview/asfix-v106.23-geometry-preview.png)
-- [Projection vectorielle des géométries](preview/asfix-v106.23-geometry-preview.svg)
-
-Les aperçus de géométrie sont des projections depuis les JSON source, pas des captures Minecraft. Le chargement en jeu des modèles et des textures n’est pas encore validé par capture client.
+- [Planche des 35 géométries principales v106.24](preview/asfix-v106.24-geometry-preview.png)
+- [Projection vectorielle v106.24](preview/asfix-v106.24-geometry-preview.svg)
+- [HUD naturel ASFIX v106.21](preview/apercu-hud-naturel-asfix-v10621.png) — la composition et les textures BetterHud sont reprises dans v106.24; maquette illustrative, pas une capture du jeu.
 
 ### Archive
 
-- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.23.zip`
-- Taille : 14 537 951 octets.
-- SHA-1 : `46E7DDBF7BAAF6A8C738299D2142C5D9A0EA2B9A`
-- SHA-256 : `FD6BED652E7574FBBFD3F84078327CAF44142B2717E12FA9D0D4328685FBE003`
-- Audit local : 2 528 entrées uniques, format 88.0, 55 modèles à volumes, aucune rotation invalide, texture ou alias manquant, et aucune teinte violette détectée dans les blocs.
-- Téléchargement : <https://raw.githubusercontent.com/wizedddhub-blip/asfixsmp-java-resourcepack/main/AsfixSMP-Java-ResourcePack-26.2-v106.23.zip>
+- Fichier : `AsfixSMP-Java-ResourcePack-26.2-v106.24.zip`
+- Taille : 15 201 036 octets.
+- SHA-1 : `4F34111FB33AAC84EB19A8CFB58FB3C77B5FDC68`
+- SHA-256 : `6CAEBD8957EDABE2BE0599AE61520A663B68EE667E320AAED4E78715B30B5ABD`
+- Téléchargement : <https://raw.githubusercontent.com/wizedddhub-blip/asfixsmp-java-resourcepack/main/AsfixSMP-Java-ResourcePack-26.2-v106.24.zip>
