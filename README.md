@@ -1,33 +1,26 @@
-# ASFIX SMP — pack Java 26.2, v106.40
+# ASFIX SMP Java Resource Pack — v106.46
 
-[Télécharger le pack](AsfixSMP-Java-ResourcePack-26.2-v106.40.zip)
+[Download the 26.2 resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.46.zip) · [View the 13-tool preview](preview/v106.46-tools-solid-depth-3d.png)
 
-## Outils
+## Tools
 
-Le pack contient 13 modèles ItemsAdder : trois pioches évolutives, quatre outils de métier, trois épées et trois haches. Ils totalisent 1 309 volumes cubiques avec profondeur non nulle. Les textures gardent des matériaux naturels (bois, métal forgé, cuir) et des accents de gemmes adaptés à chaque set.
+The pack contains 13 ItemsAdder handheld models: three evolving miner pickaxes, four job tools, three swords, and three axes. Their Minecraft `item/handheld` transforms keep the vanilla held pose. The tools use natural wood, forged steel, bronze, leather, and distinct set accents.
 
-Chaque outil hérite des transformations `minecraft:item/handheld` de Minecraft. Les rotations et échelles personnalisées ont été retirées pour retrouver la pose des outils vanilla en main. Les 13 définitions d’objets pointent vers leurs modèles, et les textures référencées sont présentes dans le pack.
+Each tool is built from volumetric cuboids with variable depth from 1.25 to 3.2 model units. Pickaxe and axe heads thicken toward the socket; hafts and wraps have separate cross-sections; gem settings sit proud of the blade. All six faces use valid four-coordinate UV rectangles. The models total 4,243 cuboids across the full set.
 
 ## HUD
 
-L’archive contient les ressources BetterHud ASFIX compilées pour Minecraft 26.2 : 48 tuiles d’image pour le HUD et la hotbar, ainsi que l’overlay shader texte de la version 26.2. Aucun JAR de plugin n’est inclus dans le resource pack.
+The archive includes the ASFIX BetterHud resources for Minecraft 26.2: 48 natural wood, iron, bronze, and turquoise-gem tiles, seven unique HUD icons, custom Oxanium and Silkscreen fonts, and the player-head element. No plugin JAR is included in this resource pack.
 
-## Vérification
+## Verification
 
-- Format Minecraft : `88.0` (26.2).
-- 2 645 entrées ZIP, sans chemin en double.
-- 273 fichiers JSON analysés sans erreur.
-- 13 modèles et 1 309 volumes 3D, aucun élément à profondeur nulle.
-- Aucune texture manquante parmi les modèles d’outils et aucune liaison ItemsAdder manquante.
-- 48 tuiles BetterHud compilées et shader 26.2 présents.
-- Taille : 15 462 566 octets.
-- SHA-1 : `6AE2A5CBFEDC888CFB7C80479E4BE4BD233FEC26`.
-- SHA-256 : `4B6268866065E5468F13C2059D386955027355418CF0CFCAEAA505040F878EDF`.
+- Resource-pack format `88.0` for Minecraft 26.2.
+- All 13 ItemsAdder definitions resolve to their model files and 13 unique 256×256 textures.
+- 25,458 face UVs checked; all are valid four-coordinate rectangles with known textures.
+- All geometry coordinates fit within the Minecraft model bounds.
+- 2,659 ZIP entries; no duplicate paths.
+- Archive size: 15,708,816 bytes.
+- SHA-1: `4D658B3B729712E354154C9E077967020A7FDE09`.
+- SHA-256: `F1F20A6490E17E683E8B94B64B3057A8245E4AC51FF31D62BB9A32592A7F2AF4`.
 
-La galerie ci-dessous est une projection hors moteur Minecraft des cuboïdes du pack. La structure a été vérifiée, mais cette archive v106.40 n’a pas encore été affichée dans un client Minecraft ; son apparence exacte en jeu reste donc à confirmer.
-
-[Ouvrir l’aperçu hors jeu des 13 outils](preview/v106.40-tools-offline-projection.png)
-
-## Reconstruction
-
-Lancer `build-release-v106.40.ps1` dans PowerShell. Le script part du ZIP v106.39, remplace les 13 modèles d’outils, intègre les ressources BetterHud compilées pour 26.2, puis vérifie l’archive et écrit `release-v106.40-manifest.txt`.
+The preview is an offline projection of the model geometry. The pack structure and UVs have been checked, but Minecraft-client rendering of v106.46 has not yet been visually confirmed.
