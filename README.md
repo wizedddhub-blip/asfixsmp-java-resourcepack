@@ -1,32 +1,34 @@
-# ASFIX SMP Java Resource Pack — v106.61
+# ASFIX SMP Java Resource Pack — v106.63
 
-[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.61-realistic-tools-64-grid.zip)
+[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.63-true-3d-tools.zip)
 
-![Thirteen high-detail volumetric 3D tools](preview/v106.61-realistic-3d-tools.png)
+![Volumetric preview of the 13 ASFIX tools](preview/v106.63-3d-tool-gallery.png)
 
 ![ASFIX wood, bronze and jade HUD frame](preview/v106.60-hud-bois-bronze-jade.png)
 
-The model sheet is an offline projection of the Minecraft item-model geometry. The HUD image shows the themed frame artwork; BetterHud composes the live text and icons from its configuration.
+The tool gallery is projected from the actual Minecraft model cuboids and their material textures. The geometry uses the native Minecraft handheld item-model format: the tools have depth and separate 3D parts, while retaining the block-built style of vanilla items.
 
 ## Tools
 
-The pack contains 13 volumetric models: three miner pickaxes, four job tools, three axes and three swords. They use 8,215 beveled 3D cuboids across seven depth bands, with a 64-step silhouette grid and a maximum of 967 cuboids in one tool. Each model uses Minecraft's `minecraft:item/handheld` parent and a tuned held pose. The natural wood, leather, steel, copper, jade, ember and gemstone surfaces use 26 separate face and edge textures.
+The pack contains 13 models: three Miner pickaxes, four job tools, three axes and three swords. The tool models use 684 cuboids total, with 13 different geometry shapes and 13 natural material textures. The pick heads use thinner forged profiles, angled wings, sharpened rails and distinct central fittings. Shafts, grip wraps, collars, guards, blade/head parts and gems are modeled as separate cuboids.
 
-The v106.61 rebuild also fixes the numeric UV values that caused Minecraft 26.2 to reject the previous model files. The release archive drops 135 superseded tool textures; the active ItemsAdder content drops its 26 unreferenced v106.60 tool textures after the model references are updated.
+Materials use natural oak and walnut, leather, forged iron, cold steel, dark iron, brass, aged bronze, amber, azurite, emerald, ruby and amethyst. Custom model rotations use Minecraft-supported 22.5 degree steps. No flat sprite is being treated as a 3D tool.
 
 ## HUD
 
-The combined pack retains the ASFIX BetterHud theme: dark wood, bronze fittings and jade accents, with the custom panel and hotbar frame, player head, role, job, coordinates, health, armor, food, money and job XP. It uses Oxanium SemiBold and Silkscreen. BetterHud disables this custom HUD for Bedrock clients.
+The combined pack includes five BetterHud configuration files and the ASFIX theme assets. The theme uses dark wood, bronze fittings and jade accents, with player head, role, job, coordinates, health, armor, food, balance and job XP panels. It includes Oxanium SemiBold and Silkscreen fonts. BetterHud disables the custom HUD for Bedrock clients.
+
+The pack contents and configuration files are present in the release archive. Live BetterHud rendering with the server plugin was not verified in this build.
 
 ## Release checks
 
-- Minecraft Java 26.2 resource format: 88.0
-- ZIP entries: 2,699, with no duplicate paths
-- Volumetric tool models: 13, with 8,215 cuboids total and 967 maximum per model
-- Unique v106.61 tool face and edge textures: 26
-- Total archive images/data: 2,262 PNG and 273 JSON files
-- Archive size: 18,153,300 bytes
-- SHA-1: `AF53A935D4C436FF74A2461B9E1C9364C9A59149`
-- SHA-256: `ADA3DEE820386BBC75B3BE5DFF796567A05EE1121DCA38A5D7D7299F3C74CF4B`
+- Target: Minecraft Java 26.2, resource format 88.0.
+- Archive contains 2,712 ZIP entries, with no duplicate paths.
+- 13 models and 684 cuboids; 13 distinct shapes.
+- 13 new 64×64 tool textures, all referenced by the models; no v106.61 tool textures remain.
+- Five BetterHud configuration files are present.
+- Archive size: 17,961,612 bytes.
+- SHA-1: `33F0B7D9D7E854EC68809E0E9D718FA7D35E8732`.
+- SHA-256: `C7F05CE2D88203A9BBE2553F5081DDA6F8AD9548141DCFE460DA1EF915676C79`.
 
-The pack was reloaded in a local Minecraft 26.2 singleplayer world. A custom `diamond_pickaxe` with `minecraft:item_model="asfix:pickaxes/miner_1"` rendered in the native handheld pose with visible depth. The client log contained no model/UV load errors after reload. The BetterHud plugin overlay was not part of that singleplayer render check.
+Automated validation checked each model's geometry bounds, face UVs, texture bindings, custom rotations and rotated bounds. The v106.62 pickaxe was loaded in a local Minecraft 26.2 client and showed visible 3D depth. The updated v106.63 models passed pack validation; an in-client render check of this exact v106.63 archive is still pending.
