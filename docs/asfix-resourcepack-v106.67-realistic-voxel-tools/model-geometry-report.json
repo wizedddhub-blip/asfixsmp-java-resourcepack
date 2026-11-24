@@ -1,0 +1,102 @@
+{
+  "version": "106.67",
+  "target": "Minecraft Java 26.2 / resource format 88.0",
+  "geometry": "native vanilla handheld item model with cuboids, stepped profiles and visible side volume; no flat sprites or thickened PNGs",
+  "textureFormat": "13 unique natural-material RGBA pixel textures, 64x64, mapped using full 0..16 vanilla UV coordinates",
+  "textures": [
+    "iron_forged",
+    "steel_cold",
+    "iron_dark",
+    "bronze_aged",
+    "brass_warm",
+    "wood_oak",
+    "wood_walnut",
+    "leather_wrap",
+    "crystal_amber",
+    "crystal_amethyst",
+    "crystal_azurite",
+    "crystal_emerald",
+    "crystal_ruby"
+  ],
+  "tools": [
+    {
+      "id": "pickaxes/miner_1",
+      "kind": "pick",
+      "elements": 96,
+      "cuboids": 96
+    },
+    {
+      "id": "pickaxes/miner_2",
+      "kind": "pick",
+      "elements": 102,
+      "cuboids": 102
+    },
+    {
+      "id": "pickaxes/miner_3",
+      "kind": "pick",
+      "elements": 100,
+      "cuboids": 100
+    },
+    {
+      "id": "job_tools/farmer",
+      "kind": "hoe",
+      "elements": 56,
+      "cuboids": 56
+    },
+    {
+      "id": "job_tools/miner",
+      "kind": "pick",
+      "elements": 95,
+      "cuboids": 95
+    },
+    {
+      "id": "job_tools/slayer",
+      "kind": "sword",
+      "elements": 104,
+      "cuboids": 104
+    },
+    {
+      "id": "job_tools/woodcutter",
+      "kind": "axe",
+      "elements": 72,
+      "cuboids": 72
+    },
+    {
+      "id": "weapons/astral_axe",
+      "kind": "axe",
+      "elements": 81,
+      "cuboids": 81
+    },
+    {
+      "id": "weapons/astral_sword",
+      "kind": "sword",
+      "elements": 98,
+      "cuboids": 98
+    },
+    {
+      "id": "weapons/infernal_axe",
+      "kind": "axe",
+      "elements": 84,
+      "cuboids": 84
+    },
+    {
+      "id": "weapons/infernal_sword",
+      "kind": "sword",
+      "elements": 106,
+      "cuboids": 106
+    },
+    {
+      "id": "weapons/nebula_axe",
+      "kind": "axe",
+      "elements": 78,
+      "cuboids": 78
+    },
+    {
+      "id": "weapons/nebula_sword",
+      "kind": "sword",
+      "elements": 105,
+      "cuboids": 105
+    }
+  ],
+  "generatedAt": "2026-11-24T22:00:11.082Z"
+}
