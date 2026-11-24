@@ -1,0 +1,27 @@
+{
+  "release": "v106.70",
+  "minecraft": "Java 26.2",
+  "resource_format": "88.0",
+  "archive": "AsfixSMP-Java-ResourcePack-26.2-v106.70-handcrafted-voxel-tools.zip",
+  "archive_bytes": 17522808,
+  "sha1": "FD6EF0A5AC95D6A303B5502EF10678C2CE5C03FC",
+  "sha256": "7DBB8B9B983B4F70D24F94E10452B14E499FC357ADF6B7C8A207FCA2AEF7E8FF",
+  "models": 13,
+  "cuboids": 1769,
+  "tool_textures": 26,
+  "betterhud_assets": 655,
+  "betterhud_26_2_shaders": 2,
+  "sword_width_units": {
+    "previous": 4.5,
+    "current": 6.975,
+    "increase_percent": 55.0
+  },
+  "validation": {
+    "duplicate_zip_paths": 0,
+    "invalid_uv": 0,
+    "degenerate_or_out_of_bounds_cuboids": 0,
+    "missing_model_textures": 0,
+    "paper_26_2_betterhud_smoke": "plugin enabled; 13.24 MB pack generated"
+  },
+  "client_render": "not visually verified in Minecraft client; gallery uses model geometry"
+}

@@ -1,31 +1,31 @@
-# ASFIX SMP Java Resource Pack — v106.65
+# ASFIX SMP Java Resource Pack — v106.70
 
-[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.65-realistic-3d-tools.zip)
+[Download the Minecraft Java 26.2 resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.70-handcrafted-voxel-tools.zip)
 
-![Volumetric preview of the 13 ASFIX tools](preview/v106.65-3d-tool-gallery.png)
+![Gallery of the 13 ASFIX SMP 3D tools](preview/v106.70-3d-tools-gallery.png)
 
-![ASFIX wood, bronze and jade HUD frame](preview/v106.60-hud-bois-bronze-jade.png)
+## 3D tools
 
-## Tools
+This release contains 13 Minecraft-native handheld item models: three Miner pickaxes, four job tools, three axes and three swords. The models are made from **1,769 individual cuboids**, with layered bevels and visible side faces. They use Minecraft’s `minecraft:item/handheld` model parent and true cuboid geometry; they are not flat images with a thin extrusion.
 
-This release rebuilds 13 held-item models in Minecraft's native cuboid item format: three Miner pickaxes, four job tools, three axes and three swords. They use 686 separate cuboids across 13 distinct silhouettes, with broad stepped pick heads, beveled cutting edges, shaped axe cheeks, wider tapered sword blades, fitted guards, reinforced sockets and wrapped hafts. The models have real volume and side faces; they are not flat sprites or thickened PNGs. Their style remains voxel-based like vanilla Minecraft, with natural wood, leather, forged iron, cold steel, aged bronze, brass and restrained crystal accents.
+The sword geometry now uses the intended width multiplier. Each of the three blades spans 6.975 model units, compared with 4.5 in the prior candidate, a 55% increase. The tool designs keep natural material colors: wood, leather, iron, steel, bronze, brass and restrained gem accents. The Nebula set retains its purple identity.
 
-The gallery is an isometric projection built from the model JSON geometry and texture samples. It helps inspect the shapes but does not replace an in-game render.
+## ASFIX HUD
 
-## HUD
+The pack includes the current custom BetterHud layout in dark wood, bronze and jade. It shows the player head, rank, job and level, coordinates, health, armor, food, balance and job XP. Oxanium and Silkscreen glyph atlases are generated from the BetterHud font files.
 
-The archive retains the custom ASFIX BetterHud theme in dark wood, bronze and jade. It includes the player head, rank, job and level, coordinates, health, armor, food, balance and job XP, with Oxanium SemiBold and Silkscreen fonts. BetterHud is disabled for Bedrock clients in its configuration. The updated v106.65 pack was validated statically; live rendering with the target BetterHud plugin still needs an in-game check.
+The HUD was generated with BetterHud 2.2.0-SNAPSHOT-449 and smoke-checked on an isolated Paper 26.2 server. BetterHud enabled successfully and generated the resource-pack assets. The gallery is a geometry projection; the full pack has not yet been visually confirmed in a Minecraft client.
 
-## Release checks
+## Build and validation
 
-- Target: Minecraft Java 26.2, resource format 88.0.
-- 13 tool models, 686 cuboids, 13 distinct geometry shapes.
-- 13 natural-material textures; every new tool texture is referenced.
-- Five BetterHud configuration files are present.
-- 2,712 ZIP entries; no duplicate paths.
-- Obsolete v106.63 and v106.64 tool textures are absent.
-- Archive size: 17,933,051 bytes.
-- SHA-1: `C9C5E8F4E160E431BF21576AC69CA9D3636B9951`.
-- SHA-256: `5812169BD705408FD17BF0A0B9301CE2C0FCC44388465650014C517440A6A164`.
+- Target: Minecraft Java 26.2, resource-pack format 88.0.
+- 13 handheld models and 1,769 cuboids.
+- 26 unique tool textures, including bevel/side-face textures.
+- 655 BetterHud assets and 2 BetterHud shader files for the 26.2 overlay.
+- 2,684 ZIP entries; no duplicate paths.
+- No malformed UV coordinates, missing model textures, degenerate boxes or out-of-bounds geometry.
+- Archive size: 17,522,808 bytes.
+- SHA-1: `FD6EF0A5AC95D6A303B5502EF10678C2CE5C03FC`.
+- SHA-256: `7DBB8B9B983B4F70D24F94E10452B14E499FC357ADF6B7C8A207FCA2AEF7E8FF`.
 
-The model archive passed structural checks for bounds, faces, texture references, unique geometry and archive integrity. Minecraft runtime rendering of this exact release has not yet been verified.
+The exact checksum and validation details are recorded in [`release-v106.70.json`](release-v106.70.json).
