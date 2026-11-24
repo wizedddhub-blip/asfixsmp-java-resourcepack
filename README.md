@@ -1,46 +1,33 @@
-# ASFIX SMP Java Resource Pack — v106.49
+# ASFIX SMP Java Resource Pack — v106.50
 
-[Download the Minecraft 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.49.zip) · [View all 13 tools in 3D](preview/v106.49-tools-gui.png) · [View the pickaxes in the vanilla hand pose](preview/v106.49-pickaxes-held.png)
+[Download the Minecraft 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.50.zip)
 
 ## Tools
 
-The pack includes 13 ItemsAdder handheld models: three evolving miner pickaxes, four job tools, three swords, and three axes. Their item transforms use Minecraft's vanilla `item/handheld` pose. Each model has a 192×192 volumetric silhouette mesh, individual front and darkened reverse textures at 768×768, and forged depth tiers from 1.0 to 2.2 model units. Steel, wood, leather, bronze, and gem details use distinct textures and side palettes.
+The pack contains 13 custom ItemsAdder tools: three evolving miner pickaxes, four profession tools, three swords, and three axes. The models now use Minecraft's native minecraft:item/handheld and generated-layer pipeline, with the same orientation and held pose as a vanilla diamond pickaxe. This removes the previous noisy micro-cube meshes and uses the transparent, detailed tool artwork already included in the pack. The generated item layer supplies Minecraft's standard pixel-edge extrusion.
 
-| Tool | Cuboids |
+| Set | Count |
 | --- | ---: |
-| Miner pickaxe I | 1,666 |
-| Miner pickaxe II | 1,403 |
-| Miner pickaxe III | 1,704 |
-| Miner job tool | 1,512 |
-| Farmer job tool | 1,307 |
-| Woodcutter job tool | 1,850 |
-| Hunter job tool | 1,720 |
-| Astral sword | 1,605 |
-| Infernal sword | 1,691 |
-| Nebula sword | 1,811 |
-| Astral axe | 1,645 |
-| Infernal axe | 1,835 |
-| Nebula axe | 1,900 |
-| **Total** | **21,649** |
+| Miner pickaxes | 3 |
+| Profession tools | 4 |
+| Swords | 3 |
+| Axes | 3 |
+| **Total** | **13** |
 
-The artwork is mapped to the front and rear surfaces, while the mesh adds the actual silhouette depth and separately shaded side faces. This keeps each object in the familiar Minecraft held-item shape while giving the head, grip, fittings, wraps, and gemstones physical thickness.
+The ItemsAdder item definitions still reference the same model IDs. This release does not change item IDs, names, abilities, progression, or HUD layout.
 
 ## HUD
 
-The archive includes the ASFIX BetterHud resources for Minecraft 26.2: 48 natural wood, iron, bronze, and turquoise-gem tiles, seven unique HUD icons, custom Oxanium and Silkscreen fonts, and the player-head element. The HUD layout keeps its existing image names and coordinates, so the new art fits the configured panels. No plugin JAR is included in this resource pack.
-
-For servers that already have BetterHud installed, [download the v106.49 BetterHud config and asset patch](BetterHud-v106.49-release.zip). It contains the matching HUD configs, image definitions, fonts, heads, layouts, and 75 files from the central BetterHud directory; it does not include the plugin JAR or server-specific runtime data.
+The natural ASFIX BetterHud design from v106.49 remains included in this pack: wood, iron, bronze and turquoise-gem panels, custom Oxanium and Silkscreen fonts, unique icons, and player-head display. The matching BetterHud configuration patch is [BetterHud v106.49](BetterHud-v106.49-release.zip).
 
 ## Verification
 
-- Resource-pack format `88.0` for Minecraft 26.2.
-- All 13 ItemsAdder definitions resolve to their models; every model uses `minecraft:item/handheld`.
-- All 129,894 model faces have six valid sides, known textures, and valid UVs.
-- All 13 front textures are unique; front and rear tool textures are 768×768.
-- 48 BetterHud tiles are present at 256×228 each.
-- 2,676 ZIP entries; no duplicate paths.
-- Archive size: 17,572,962 bytes.
-- SHA-1: `697BD00989369EA711F5FB3909186B23822C826F`.
-- SHA-256: `A5835097C389E85723FDF35BA43BF791EDCF401BBFF1D8CACC02117B4DE2C0D5`.
+- Resource-pack format 88.0 for Minecraft 26.2.
+- 13 tool models use minecraft:item/handheld and the vanilla generated-layer pipeline.
+- Every model's texture reference resolves; all 13 item definitions still point to the intended model.
+- The archive has 2,676 entries and no duplicate paths.
+- Archive size: 16,274,542 bytes.
+- SHA-1: 947239F85C1334613BF09C55AE7A03A00CAF06FB.
+- SHA-256: F679A6F7AE381B06004834E57350639FFC9B043839B9FB732E8DB48DC5CCA78F.
 
-The included gallery is an offline projection of the actual model JSON and textures, not an in-client screenshot. Model references, geometry bounds, UVs, and archive contents pass validation; the final Minecraft-client rendering still requires an in-game check with this exact pack loaded.
+Archive validation is structural. The actual Minecraft 26.2 client render is being checked with this exact release.
