@@ -1,20 +1,32 @@
-# ASFIX SMP Java Resource Pack — v106.59
+# ASFIX SMP Java Resource Pack — v106.60
 
-[Download for Minecraft Java 26.2](AsfixSMP-Java-ResourcePack-26.2-v106.59-layered-3d-tools.zip)
+[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.60-sculpted-voxel-tools.zip)
 
-![Five-step beveled 3D tools](preview/v106.59-five-step-bevel-tools.png)
+![Thirteen sculpted volumetric 3D tools](preview/v106.60-sculpted-voxel-tools.png)
 
-This release refines the 13 custom tools with five progressive depth bands: the silhouette shell, outer bevel, inner bevel, shoulder and raised core. Their layered cuboid geometry adds a more gradual bevel while keeping a block-built Minecraft shape. Each model uses a 64-slice silhouette, detailed face textures and separate material textures on the edges. Pickaxe and axe heads reach 5.2 model units in depth; sword blades stay slimmer. Materials preserve natural steel, wood, leather and gemstone colors.
+![ASFIX wood, bronze and jade HUD frame](preview/v106.60-hud-bois-bronze-jade.png)
 
-The custom BetterHud wood, bronze and jade theme remains included, with its HUD panels, unique icons, hotbar, XP bars and font assets. Its layout is `asfix_hub_hud`.
+The gallery shows an offline projection of Minecraft item-model geometry. The HUD image shows its frame art; runtime text and icons are composed from the BetterHud configuration. Neither image is a live Minecraft capture.
 
-- Minecraft resource format: `88.0` (26.2)
-- Archive entries: `2808`, with no duplicate paths or superseded v106.58 tool textures
-- Layered volumetric tool models: `13`, with `7189` cuboid elements in total
-- New tool face and edge textures: `26`
-- BetterHud assets: `647` PNG and `10` JSON files
-- Archive size: `26494794` bytes
-- SHA-1: `24AB18448CB26F99565A457AF056CB818F88B0D7`
-- SHA-256: `A708AADA012B032295AB52B9C53CB1632ACE6945310D8FCED861E25839AB609C`
+## Models and textures
 
-The preview is rendered from the resource-pack geometry, not captured from a live Minecraft client. Verify the held-item pose in Minecraft 26.2 after the server sends the pack.
+This update refines all 13 custom tools: three miner pickaxes, four job tools, three axes and three swords. Their 8,215 cuboids build seven stepped silhouette and depth bands, including beveled faces, material sides and raised cores. They use Minecraft’s minecraft:item/handheld pose family. Each tool has separate face and edge maps, for 26 unique v106.60 textures. The authored detail is 128×128 and expanded to 512×512 with nearest-neighbour pixels. Natural metal, wood, leather, copper, jade, ember and gem colors remain.
+
+The archive removes 135 superseded tool textures that were no longer referenced. It does not contain duplicate ZIP paths.
+
+## HUD
+
+The combined pack retains the ASFIX BetterHud theme: dark wood, bronze fittings and jade accents, with the custom panel/hotbar frame, player head, role, job, coordinates, health, armor, food, money and job XP. It uses Oxanium SemiBold and Silkscreen. The BetterHud config disables this custom HUD for Bedrock clients.
+
+## Release checks
+
+- Minecraft Java 26.2 resource format: 88.0
+- ZIP entries: 2,699, with no duplicate paths
+- Volumetric tool models: 13, with 8,215 cuboids total and 967 maximum per model
+- Unique tool face and edge textures: 26
+- Total archive images/data: 2,262 PNG and 273 JSON files
+- Archive size: 16,460,744 bytes
+- SHA-1: 9C0F47DB86FDF59B84A65CEE0A72EC5A38C82CE1
+- SHA-256: 2B140BBB7087B37B5710104945C9A727382D265B2332ED745E609AD94CE24457
+
+The v106.60 archive passed ZIP integrity, duplicate-path, model-count, parent, texture-reference and format checks. The 2,659 unchanged entries match v106.59 by CRC. In-game held-item poses and the BetterHud overlay still need confirmation in a Minecraft 26.2 client.
