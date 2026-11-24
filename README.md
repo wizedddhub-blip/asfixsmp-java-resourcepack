@@ -1,15 +1,20 @@
-# ASFIX SMP Java Resource Pack — v106.53
+# ASFIX SMP Java Resource Pack — v106.54
 
-[Download for Minecraft Java 26.2](AsfixSMP-Java-ResourcePack-26.2-v106.53-realistic-handheld-tools.zip)
+[Download for Minecraft Java 26.2](AsfixSMP-Java-ResourcePack-26.2-v106.54-volumetric-tools.zip)
 
-This release replaces all 13 tool sprites with detailed voxel-rendered steel, wood, leather and gem designs. Each item keeps minecraft:item/handheld, so its held and inventory orientation follows vanilla tools. The transparent textures are 256×256 RGBA.
+![Isometric preview of the volumetric handheld tool models](preview/v106.54-volumetric-tools.png)
 
-The archive also uses the current BetterHud wood, bronze and jade panels and synchronizes the 7 HUD icons plus 48 panel tiles and 2 XP bars with the central BetterHud assets.
+This release upgrades all 13 custom tools and weapons to shaped cuboid geometry while preserving the vanilla `minecraft:item/handheld` grip and pose. The front and back use their detailed 256×256 RGBA art; side faces use item-specific dark forged-metal, wood or blue/red alloy finishes. Each model contains 21–50 cuboid elements, with thickness adjusted between 1.8 and 3.5 model units to fit handles, blades and heads.
 
-- Minecraft pack format: 88.0
-- Archive entries: 2704, no duplicate paths
-- SHA-1: $sha1
-- SHA-256: $sha256
-- Archive size: 22194482 bytes
+The archive also carries the natural wood, bronze and jade BetterHud panels, its seven unique HUD icons, 48 panel tiles, XP bars and compiled font assets. The HUD source is configured for Minecraft 26.2 and the `asfix_hub_hud` layout.
 
-The preview and structural report are in docs/asfix-resourcepack-v106.53-tools in the central ASFIX SMP folder. A live visual check still requires restarting the server and opening the pack on a Minecraft 26.2 client.
+- Minecraft resource format: `88.0` (26.2)
+- Archive entries: `2717`, with no duplicate paths
+- Volumetric models: `13`
+- New material edge textures: `13`
+- Compiled BetterHud assets: `657`
+- Archive size: `22225197` bytes
+- SHA-1: `305E9A0ECC89FC8E96145722BD7B0AD698E871DB`
+- SHA-256: `BD8C38400CD35515BE306569D5BE9F88282DE0DF187FB0523F15729E106FEE02`
+
+The preview is rendered from the model JSON geometry for comparison; it is not a screenshot from a live Minecraft client. Final hand pose and pack delivery still require the updated archive to be served and loaded by a Minecraft 26.2 client.
