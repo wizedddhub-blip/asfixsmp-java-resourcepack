@@ -1,20 +1,20 @@
-# ASFIX SMP Java Resource Pack — v106.54
+# ASFIX SMP Java Resource Pack — v106.56
 
-[Download for Minecraft Java 26.2](AsfixSMP-Java-ResourcePack-26.2-v106.54-volumetric-tools.zip)
+[Download for Minecraft Java 26.2](AsfixSMP-Java-ResourcePack-26.2-v106.56-natural-volumetric-tools.zip)
 
-![Isometric preview of the volumetric handheld tool models](preview/v106.54-volumetric-tools.png)
+![Preview of the 13 natural volumetric tools](preview/v106.56-natural-volumetric-tools.png)
 
-This release upgrades all 13 custom tools and weapons to shaped cuboid geometry while preserving the vanilla `minecraft:item/handheld` grip and pose. The front and back use their detailed 256×256 RGBA art; side faces use item-specific dark forged-metal, wood or blue/red alloy finishes. Each model contains 21–50 cuboid elements, with thickness adjusted between 1.8 and 3.5 model units to fit handles, blades and heads.
+This release rebuilds all 13 custom pickaxes, job tools, axes and swords as detailed volumetric handheld models. They keep Minecraft's `minecraft:item/handheld` grip and pose. Profiled tool heads are deeper than the hafts, sword blades stay slimmer, and each silhouette gets beveled depth from its material shading. Natural steel, wood, leather and gem colors remain visible on the model's sides.
 
-The archive also carries the natural wood, bronze and jade BetterHud panels, its seven unique HUD icons, 48 panel tiles, XP bars and compiled font assets. The HUD source is configured for Minecraft 26.2 and the `asfix_hub_hud` layout.
+The archive retains the natural wood, bronze and jade BetterHud theme, including the custom HUD panels, icons, hotbar, XP bars and font assets. The HUD is configured for Minecraft 26.2 and the `asfix_hub_hud` layout.
 
 - Minecraft resource format: `88.0` (26.2)
-- Archive entries: `2717`, with no duplicate paths
-- Volumetric models: `13`
-- New material edge textures: `13`
-- Compiled BetterHud assets: `657`
-- Archive size: `22225197` bytes
-- SHA-1: `305E9A0ECC89FC8E96145722BD7B0AD698E871DB`
-- SHA-256: `BD8C38400CD35515BE306569D5BE9F88282DE0DF187FB0523F15729E106FEE02`
+- Archive entries: `2756`, with no duplicate paths
+- Volumetric tool models: `13`, with `2499` cuboid elements in total
+- New material side textures: `13`
+- Compiled BetterHud assets: `658` paths (`647` PNG and `10` JSON assets, plus the directory entry)
+- Archive size: `22368212` bytes
+- SHA-1: `B7EC8071054B31360B0CAE571C5EAB64F928A183`
+- SHA-256: `DAD98CEBE0544EFA3BD03A9D0869B41EB7A6ACAF7D00B39C6D224C0DE65AE258`
 
-The preview is rendered from the model JSON geometry for comparison; it is not a screenshot from a live Minecraft client. Final hand pose and pack delivery still require the updated archive to be served and loaded by a Minecraft 26.2 client.
+The preview is rendered from the resource-pack model geometry. It is not a live Minecraft screenshot; final in-hand appearance still needs client-side verification after the server serves this archive.
