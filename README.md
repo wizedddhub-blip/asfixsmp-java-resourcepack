@@ -1,32 +1,32 @@
-# ASFIX SMP Java Resource Pack — v106.60
+# ASFIX SMP Java Resource Pack — v106.61
 
-[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.60-sculpted-voxel-tools.zip)
+[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.61-realistic-tools-64-grid.zip)
 
-![Thirteen sculpted volumetric 3D tools](preview/v106.60-sculpted-voxel-tools.png)
+![Thirteen high-detail volumetric 3D tools](preview/v106.61-realistic-3d-tools.png)
 
 ![ASFIX wood, bronze and jade HUD frame](preview/v106.60-hud-bois-bronze-jade.png)
 
-The gallery shows an offline projection of Minecraft item-model geometry. The HUD image shows its frame art; runtime text and icons are composed from the BetterHud configuration. Neither image is a live Minecraft capture.
+The model sheet is an offline projection of the Minecraft item-model geometry. The HUD image shows the themed frame artwork; BetterHud composes the live text and icons from its configuration.
 
-## Models and textures
+## Tools
 
-This update refines all 13 custom tools: three miner pickaxes, four job tools, three axes and three swords. Their 8,215 cuboids build seven stepped silhouette and depth bands, including beveled faces, material sides and raised cores. They use Minecraft’s minecraft:item/handheld pose family. Each tool has separate face and edge maps, for 26 unique v106.60 textures. The authored detail is 128×128 and expanded to 512×512 with nearest-neighbour pixels. Natural metal, wood, leather, copper, jade, ember and gem colors remain.
+The pack contains 13 volumetric models: three miner pickaxes, four job tools, three axes and three swords. They use 8,215 beveled 3D cuboids across seven depth bands, with a 64-step silhouette grid and a maximum of 967 cuboids in one tool. Each model uses Minecraft's `minecraft:item/handheld` parent and a tuned held pose. The natural wood, leather, steel, copper, jade, ember and gemstone surfaces use 26 separate face and edge textures.
 
-The archive removes 135 superseded tool textures that were no longer referenced. It does not contain duplicate ZIP paths.
+The v106.61 rebuild also fixes the numeric UV values that caused Minecraft 26.2 to reject the previous model files. The release archive drops 135 superseded tool textures; the active ItemsAdder content drops its 26 unreferenced v106.60 tool textures after the model references are updated.
 
 ## HUD
 
-The combined pack retains the ASFIX BetterHud theme: dark wood, bronze fittings and jade accents, with the custom panel/hotbar frame, player head, role, job, coordinates, health, armor, food, money and job XP. It uses Oxanium SemiBold and Silkscreen. The BetterHud config disables this custom HUD for Bedrock clients.
+The combined pack retains the ASFIX BetterHud theme: dark wood, bronze fittings and jade accents, with the custom panel and hotbar frame, player head, role, job, coordinates, health, armor, food, money and job XP. It uses Oxanium SemiBold and Silkscreen. BetterHud disables this custom HUD for Bedrock clients.
 
 ## Release checks
 
 - Minecraft Java 26.2 resource format: 88.0
 - ZIP entries: 2,699, with no duplicate paths
 - Volumetric tool models: 13, with 8,215 cuboids total and 967 maximum per model
-- Unique tool face and edge textures: 26
+- Unique v106.61 tool face and edge textures: 26
 - Total archive images/data: 2,262 PNG and 273 JSON files
-- Archive size: 16,460,744 bytes
-- SHA-1: 9C0F47DB86FDF59B84A65CEE0A72EC5A38C82CE1
-- SHA-256: 2B140BBB7087B37B5710104945C9A727382D265B2332ED745E609AD94CE24457
+- Archive size: 18,153,300 bytes
+- SHA-1: `AF53A935D4C436FF74A2461B9E1C9364C9A59149`
+- SHA-256: `ADA3DEE820386BBC75B3BE5DFF796567A05EE1121DCA38A5D7D7299F3C74CF4B`
 
-The v106.60 archive passed ZIP integrity, duplicate-path, model-count, parent, texture-reference and format checks. The 2,659 unchanged entries match v106.59 by CRC. In-game held-item poses and the BetterHud overlay still need confirmation in a Minecraft 26.2 client.
+The pack was reloaded in a local Minecraft 26.2 singleplayer world. A custom `diamond_pickaxe` with `minecraft:item_model="asfix:pickaxes/miner_1"` rendered in the native handheld pose with visible depth. The client log contained no model/UV load errors after reload. The BetterHud plugin overlay was not part of that singleplayer render check.
