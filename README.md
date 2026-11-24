@@ -1,33 +1,29 @@
-# ASFIX SMP Java Resource Pack — v106.50
+# ASFIX SMP Java Resource Pack — v106.51
 
-[Download the Minecraft 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.50.zip)
+[Download the Minecraft Java 26.2 pack](AsfixSMP-Java-ResourcePack-26.2-v106.51-realistic-tools.zip)
 
-## Tools
+## Tool models
 
-The pack contains 13 custom ItemsAdder tools: three evolving miner pickaxes, four profession tools, three swords, and three axes. The models now use Minecraft's native minecraft:item/handheld and generated-layer pipeline, with the same orientation and held pose as a vanilla diamond pickaxe. This removes the previous noisy micro-cube meshes and uses the transparent, detailed tool artwork already included in the pack. The generated item layer supplies Minecraft's standard pixel-edge extrusion.
+This release refreshes all 13 custom tools with distinct, high-detail material artwork:
 
-| Set | Count |
-| --- | ---: |
-| Miner pickaxes | 3 |
-| Profession tools | 4 |
-| Swords | 3 |
-| Axes | 3 |
-| **Total** | **13** |
+- 3 evolving miner pickaxes
+- 4 profession tools
+- 3 swords
+- 3 axes
 
-The ItemsAdder item definitions still reference the same model IDs. This release does not change item IDs, names, abilities, progression, or HUD layout.
+Each tool has its own 768×768 transparent texture. The item models use Minecraft's native minecraft:item/handheld parent, so their hand pose and standard generated-item extrusion match vanilla tools such as the diamond pickaxe. Item IDs and abilities are unchanged. The same 13 model definitions and versioned textures are also synchronized into the local ItemsAdder source tree.
 
-## HUD
+## Custom HUD
 
-The natural ASFIX BetterHud design from v106.49 remains included in this pack: wood, iron, bronze and turquoise-gem panels, custom Oxanium and Silkscreen fonts, unique icons, and player-head display. The matching BetterHud configuration patch is [BetterHud v106.49](BetterHud-v106.49-release.zip).
+The pack retains the natural-material ASFIX BetterHud design: framed HUD and hotbar panels, player head, rank/job/coordinates, health/armor/food, currency, job XP, unique icons, and Oxanium/Silkscreen fonts. The matching BetterHud settings and source assets are in the central server folder under plugins/BetterHud.
 
 ## Verification
 
-- Resource-pack format 88.0 for Minecraft 26.2.
-- 13 tool models use minecraft:item/handheld and the vanilla generated-layer pipeline.
-- Every model's texture reference resolves; all 13 item definitions still point to the intended model.
-- The archive has 2,676 entries and no duplicate paths.
-- Archive size: 16,274,542 bytes.
-- SHA-1: 947239F85C1334613BF09C55AE7A03A00CAF06FB.
-- SHA-256: F679A6F7AE381B06004834E57350639FFC9B043839B9FB732E8DB48DC5CCA78F.
+- Target: Minecraft Java 26.2; resource format 88.0.
+- All 13 model files use minecraft:item/handheld and reference a unique v106.51 texture.
+- All 13 textures are present in the pack and in the ItemsAdder source.
+- Archive: 2,689 entries, 0 duplicate paths, 21,248,782 bytes.
+- SHA-1: 8B8A946DF8D615E179A217365F6BB20194735503.
+- SHA-256: F473BEAF893163E6917C9781AAE0DB0F0D526D6648CC997409352B42838FA1CB.
 
-Archive validation is structural. The actual Minecraft 26.2 client render is being checked with this exact release.
+Structural checks are complete. The exact in-game appearance still needs to be confirmed in a Minecraft 26.2 client after that client loads this v106.51 archive.
