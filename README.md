@@ -29,6 +29,8 @@ The artwork is mapped to the front and rear surfaces, while the mesh adds the ac
 
 The archive includes the ASFIX BetterHud resources for Minecraft 26.2: 48 natural wood, iron, bronze, and turquoise-gem tiles, seven unique HUD icons, custom Oxanium and Silkscreen fonts, and the player-head element. The HUD layout keeps its existing image names and coordinates, so the new art fits the configured panels. No plugin JAR is included in this resource pack.
 
+For servers that already have BetterHud installed, [download the v106.49 BetterHud config and asset patch](BetterHud-v106.49-release.zip). It contains the matching HUD configs, image definitions, fonts, heads, layouts, and 75 files from the central BetterHud directory; it does not include the plugin JAR or server-specific runtime data.
+
 ## Verification
 
 - Resource-pack format `88.0` for Minecraft 26.2.
