@@ -1,0 +1,22 @@
+{
+  "release": "v106.72",
+  "minecraft": "Java 26.2",
+  "resource_format": "88.0",
+  "archive": "AsfixSMP-Java-ResourcePack-26.2-v106.72-scale-correct-3d-tools.zip",
+  "archive_bytes": 17606378,
+  "sha1": "8AB352D71C79119CC0194F1B7FF2DCE9159A1CB0",
+  "sha256": "27D786BFED811B10DE96D2BF469818A65F995901056F5CE2C2A2EA46608B4EC1",
+  "models": 13,
+  "cuboids": 929.0,
+  "dedicated_tool_textures": 13,
+  "betterhud_assets": 655,
+  "archive_entries": 2697,
+  "validation": {
+    "duplicate_zip_paths": 0,
+    "missing_model_textures": 0,
+    "invalid_uv": 0,
+    "degenerate_cuboids": 0,
+    "out_of_bounds_after_rotation": 0,
+    "java_client_render": "not yet visually verified in Minecraft client"
+  }
+}

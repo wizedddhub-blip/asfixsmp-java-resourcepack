@@ -1,16 +1,14 @@
-# ASFIX SMP Java Resource Pack — v106.71
+# ASFIX SMP Java Resource Pack — v106.72
 
-[Download the Java 26.2 resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.71-diagonal-volume-tools.zip)
+[Download the Java 26.2 resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.72-scale-correct-3d-tools.zip)
 
-![Preview of the 13 diagonal 3D voxel tools](preview/v106.71-diagonal-3d-tools.png)
+![Preview of the 13 volumetric Minecraft tools](preview/v106.72-scale-correct-3d-tools.png)
 
 ## Handheld tools
 
-This release replaces the previous tool geometry with 13 item models built from 929 individual cuboids. Pickaxes, axes, the farmer's hoe, and swords use a diagonal Minecraft handheld silhouette, visible side thickness, forged metal, natural wood and leather, and restrained ore or gem accents. Each named item has its own geometry cues; the three miner pickaxe tiers are visually distinct.
+This release improves the active 13 custom tools: three miner pickaxe tiers, miner and farmer job tools, woodcutter axe, hunter sword, and the Astral, Infernal and Nebula axe and sword sets. They are volumetric cuboid models in Minecraft's vanilla `minecraft:item/handheld` format, with separate front and side geometry, natural wood and leather, forged metal, and restrained gem accents.
 
-The models use `minecraft:item/handheld` and apply a 45-degree in-plane rotation to the assembled voxel parts. They are actual cuboid geometry with front and side faces, not a flat sprite with a thin shell. Their dimensions and handed-item transforms remain within Minecraft's 16-unit model space.
-
-The preview is rendered from the JSON geometry and textures. It is useful for checking shape and material assignment, but it is not a screenshot of the Minecraft client. The final held appearance still needs an in-game client check.
+The UV mapping now follows each cuboid's actual face dimensions. This preserves the 64×64 texture detail on long hafts, thin edges and metal plates instead of stretching a whole material sheet over every small part. Each model remains within Minecraft's 16-unit item space. The preview is rendered from the model JSON and textures; it is a static isometric render rather than an in-client screenshot.
 
 ## ASFIX HUD
 
@@ -21,13 +19,10 @@ The HUD source is under `plugins/BetterHud` in the central server folder. Better
 ## Release validation
 
 - Target: Minecraft Java 26.2, resource-pack format 88.0.
-- 13 active 3D tool models, 929 cuboids and 13 dedicated material textures.
-- All models inherit `minecraft:item/handheld`; the 13 named item definitions still resolve to those model IDs.
-- Every face texture and UV reference resolves; every cuboid has positive volume.
+- 13 active tool models, 929 positive-volume cuboids and 13 dedicated material textures.
+- Every face texture and UV reference resolves; face UV regions stay inside the 16-unit texture coordinate range and scale with face geometry.
 - All rotated model bounds remain inside 0–16 units.
-- 2,697 ZIP entries with no duplicate paths; HUD assets are present.
-- Archive size: 17,561,932 bytes.
-- SHA-1: `0B1378129D0453B77C94D6FB7CA92F499412AFFB`.
-- SHA-256: `F87008A573185965B2A8FF3D5A92182679F12D786EAF0B9F7F49AE9F9747625C`.
+- The 2,697-entry ZIP has no duplicate paths, and BetterHud assets are present.
+- Minecraft-client rendering has not been verified in this release; confirm visuals in-game with the pack enabled.
 
-Full machine-readable release metadata: [`release-v106.71.json`](release-v106.71.json).
+Full machine-readable release metadata: [`release-v106.72.json`](release-v106.72.json).
