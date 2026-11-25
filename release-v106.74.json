@@ -1,0 +1,24 @@
+{
+  "release": "v106.74",
+  "minecraft": "Java 26.2",
+  "resource_format": "88.0",
+  "archive": "AsfixSMP-Java-ResourcePack-26.2-v106.74-integrated-forged-3d-tools.zip",
+  "archive_bytes": 17700298,
+  "sha1": "4E165AB7D52B0DF2C8CC78E687A9076E430961F6",
+  "sha256": "A02C01B794EC158CD4101BF59DFFB8CF8C47038B01508A58A8825F89F2EB1889",
+  "models": 13,
+  "cuboids": 1033,
+  "three_dimensional_elements": 1033,
+  "tool_models_in_vanilla_handheld_format": 13,
+  "dedicated_tool_textures": 13,
+  "betterhud_assets": 655,
+  "archive_entries": 2684,
+  "validation": {
+    "duplicate_zip_paths": 0,
+    "missing_model_textures": 0,
+    "invalid_uv": 0,
+    "degenerate_cuboids": 0,
+    "out_of_bounds_after_rotation": 0,
+    "java_client_render": "not yet visually verified in Minecraft client"
+  }
+}
