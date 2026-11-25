@@ -1,0 +1,24 @@
+{
+  "release": "v106.75",
+  "minecraft": "Java 26.2",
+  "resource_format": "88.0",
+  "archive": "AsfixSMP-Java-ResourcePack-26.2-v106.75-realistic-3d-tools.zip",
+  "archive_bytes": 19701390,
+  "sha1": "931E5C4A8867D5EFD1B1A07BC9EEB58143D6DB6F",
+  "sha256": "F62435E0B3E4EB6B5CFCC70D13A7AF12774AC44DD82B21E5F5A0C9328566EA68",
+  "models": 13,
+  "cuboids": 2930,
+  "three_dimensional_elements": 2930,
+  "tool_models_in_vanilla_handheld_format": 13,
+  "dedicated_tool_textures": 13,
+  "betterhud_assets": 655,
+  "archive_entries": 2710,
+  "validation": {
+    "duplicate_zip_paths": 0,
+    "missing_model_textures": 0,
+    "invalid_uv": 0,
+    "degenerate_cuboids": 0,
+    "out_of_bounds_after_rotation": 0,
+    "java_client_render": "not yet visually verified in Minecraft client"
+  }
+}
