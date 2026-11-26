@@ -1,0 +1,31 @@
+{
+  "version": "v106.76",
+  "target": "Minecraft Java 26.2",
+  "archive": "AsfixSMP-Java-ResourcePack-26.2-v106.76-AsyCrates-Realistic3D.zip",
+  "archiveBytes": 19738909,
+  "sha1": "4C9867702BF6DCE06C60B2497C2E2F7B00E96480",
+  "crateModels": {
+    "cosmic_common": 44,
+    "cosmic_rare": 48,
+    "cosmic_epic": 49,
+    "cosmic_legendary": 48,
+    "cosmic_mythic": 52,
+    "astral_royal": 48,
+    "grim_reaper": 48,
+    "nightshade": 52,
+    "christmas_dreams": 54
+  },
+  "crateModelCuboidsTotal": 443,
+  "crateNoteBlockStateVariants": 18,
+  "preservedNoteBlockVariants": 800,
+  "archiveEntries": 2728,
+  "missingTextureReferences": 0,
+  "localSmoke": {
+    "server": "Paper 26.2 build 135",
+    "java": "25",
+    "asyCrates": "1.1.4",
+    "result": "AsyCrates and AsfixCrateBridge loaded; nine crate IDs listed; all crate locations unset; two cosmic_common virtual keys retained"
+  },
+  "minecraftClientRender": "not performed",
+  "liveServerDeployment": "not performed"
+}

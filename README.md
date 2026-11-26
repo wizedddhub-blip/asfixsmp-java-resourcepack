@@ -1,28 +1,31 @@
-# ASFIX SMP Java Resource Pack — v106.75
+# ASFIX SMP Java Resource Pack — v106.76
 
-[Download the Java 26.2 resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.75-realistic-3d-tools.zip)
+Minecraft Java 26.2 pack, including the ASFIX natural-material HUD and tools plus nine realistic, volumetric crate models for AsyCrates.
 
-![Preview of all 13 realistic volumetric tools](preview/v106.75-realistic-3d-tools.png)
+[Download the resource pack](AsfixSMP-Java-ResourcePack-26.2-v106.76-AsyCrates-Realistic3D.zip)
 
-## Real 3D handheld tools
+## Crates
 
-This release replaces the active 13 tool models: three miner pickaxe tiers, the Miner, Farmer, Slayer and Woodcutter job tools, and the Astral, Infernal and Nebula axe and sword sets. Each uses Minecraft's vanilla `minecraft:item/handheld` model format with actual cuboid geometry and thickness across the three axes. The detailed forged heads, blade profiles, wood handles, leather wraps, metal collars and gems use natural material colors.
+The pack maps nine unique crate models to note-block states for use with AsyCrates 1.1.4 and the ASFIX crate bridge:
 
-The 13 models contain 2,930 non-zero-volume cuboids. Dedicated, high-resolution material textures carry the sculpted steel, iron, oak, walnut, leather and gem details. Item definition IDs remain stable, so the existing ItemsAdder items point to the updated models.
+- `cosmic_common`, `cosmic_rare`, `cosmic_epic`
+- `cosmic_legendary`, `cosmic_mythic`
+- `astral_royal`, `grim_reaper`, `nightshade`, `christmas_dreams`
 
-The image above is a static render from the model JSON and textures. The final held pose still needs confirmation in a Minecraft 26.2 client with ItemsAdder's pack enabled.
+The models use Minecraft cuboid geometry with visible depth, natural wood and metal colors, and distinct trims and gems. Each crate uses 44–54 cuboids (443 total). All 18 powered/unpowered note-block state mappings are present. The pack archive contains 2,728 files and its model texture references resolve.
 
-## ASFIX HUD
+The local Paper 26.2 build 135 smoke check loaded AsyCrates 1.1.4 and AsfixCrateBridge, listed all nine crate IDs, and confirmed their locations were unset. No crate locations or structures are included in this release; place each crate in game yourself. The two existing `cosmic_common` virtual keys were preserved during migration.
 
-The archive retains the ASFIX BetterHud layout in a natural-material theme, with a player head, rank and job details, coordinates, health, armor, hunger, balance, job experience and framed hotbar. Oxanium and Silkscreen font atlases remain included; the BetterHud assets are unchanged in this release.
+## Tools and HUD
 
-## Release verification
+The existing 13 volumetric tool models and ASFIX BetterHud assets are retained from v106.75. The tool models use vanilla handheld item definitions and natural-material textures. The HUD includes the ASFIX theme and custom font assets.
 
-- Target: Minecraft Java 26.2, resource-pack format 88.0.
-- 13 active tool models in vanilla handheld format.
-- 2,930 positive-volume cuboids across the tools.
-- 13 dedicated tool textures.
-- Archive model texture references resolve, with no duplicate ZIP paths.
-- Minecraft-client rendering has not been captured for this release.
+## Verification limits
 
-Full machine-readable metadata: `release-v106.75.json`.
+The plugin startup/configuration and pack structure were checked locally. A Minecraft client render and live-server deployment were not performed, so in-game visual rendering still needs confirmation after the pack and plugins are installed on the server.
+
+## Release data
+
+- SHA-1: `4C9867702BF6DCE06C60B2497C2E2F7B00E96480`
+- Archive size: 19,738,909 bytes
+- Release metadata: [`release-v106.76.json`](release-v106.76.json)
